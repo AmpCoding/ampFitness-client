@@ -1,0 +1,19 @@
+.app {
+    height: 40vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   }
+   .app_uploadButton {
+    height: 2rem;
+    width: 5rem;
+    background-color: black;
+    color: white;
+   }
+
+   .app_uploadedImg {
+    height: 10rem;
+    width: 10rem;
+    position: absolute;
+    top: 0;
+   }

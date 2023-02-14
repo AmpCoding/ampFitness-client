@@ -45,7 +45,7 @@ export default function Addimage() {
             description: formInfo.description
 
         }
-        let res2 = await fetch(`http://localhost:3005/api/portal/addimage`, {
+        let res2 = await fetch(`${process.env.REACT_APP_SERVER_URL}/api/portal/addimage`, {
             method: "POST",
             mode:'cors',
             headers: {

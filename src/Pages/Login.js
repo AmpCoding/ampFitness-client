@@ -59,7 +59,7 @@ function onFormSubmit(e){
 };
 
 async function Login(loginInfo){
-    let res = await fetch(`http://localhost:3005/api/login/verification`, {
+    let res = await fetch(`http://${process.env.REACT_APP_SERVER_URL}/api/login/verification`, {
         method: "POST",
         mode: "cors",
         headers: {

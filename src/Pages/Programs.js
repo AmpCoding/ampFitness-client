@@ -62,7 +62,7 @@ const tiers = [
 const Programs = () => {
     async function AddThisUser(user){
         console.log(user);
-        let res = await fetch(`http://localhost:3005/api/signup`, {
+        let res = await fetch(`${process.env.REACT_APP_SERVER_URL}/api/signup`, {
             method: 'POST',
             mode: 'cors',
             headers: {

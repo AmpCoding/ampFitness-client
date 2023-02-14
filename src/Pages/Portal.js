@@ -17,20 +17,20 @@ const Portal = ({user, loggedIn}) => {
     console.log(user);
     console.log(loggedIn);
     // async function GetThisUser(id){
-    //     let res = await fetch(`http://localhost:3005/api/user/${id}`);
+    //     let res = await fetch(`${process.env.REACT_APP_SERVER_URL}/api/user/${id}`);
     //     res = await res.json();
     //     console.log(res);
     //     // setUser(res.results);
     // }
     async function GetAllImages(){
-        let res = await fetch("http://localhost:3005/api/portal/allimages");
+        let res = await fetch(`${process.env.REACT_APP_SERVER_URL}/api/portal/allimages`);
         res = await res.json();
         console.log(res);
         setImages(res.results);
     }
     async function AddThisImage(image){
         console.log(image);
-        let res = await fetch(`http://localhost:3005/api/portal/addimage`, {
+        let res = await fetch(`${process.env.REACT_APP_SERVER_URL}/api/portal/addimage`, {
             method: 'POST',
             mode: 'cors',
             headers: {
@@ -44,7 +44,7 @@ const Portal = ({user, loggedIn}) => {
         GetAllImages();
     }
     async function DeleteThisImage(id){
-        let res = await fetch(`http://localhost3005/api/portal/images/delete/${id}`);
+        let res = await fetch(`${process.env.REACT_APP_SERVER_URL}/api/portal/images/delete/${id}`);
         res = await res.json();
         console.log(res);
         GetAllImages();

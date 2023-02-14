@@ -2,7 +2,7 @@ import React from 'react';
 import Workoutvideo from "../video/Cable-kickbacks.mp4";
 import Pricing from '../Components/Programcards';
 import Results from '../Components/Results';
-import About from '../Components/About';
+// import About from '../Components/About';
 import Faqs from '../Components/Faqs';
 import Header from '../Components/Header';
 
@@ -20,7 +20,7 @@ const Landing = () => {
         </h2> */}
         <Pricing />
         <Results />
-        <About />
+        {/* <About /> */}
         <Faqs />
     </div>
     )

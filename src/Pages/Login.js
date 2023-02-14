@@ -139,7 +139,8 @@ control={<Checkbox value="remember" color="primary" />}
 label="Remember me"
 />
 <Button
-onSubmit={onFormSubmit}
+// onSubmit={onFormSubmit}
+onChange={onInputChange}
 type="submit"
 fullWidth
 variant="contained"
